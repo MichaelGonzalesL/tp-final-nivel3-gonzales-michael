@@ -34,6 +34,11 @@
             </div>
             <div class="mb-3">
                 <asp:Button Text="Agregar" ID="btnAgregar" OnClick="btnAgregar_Click" runat="server" CssClass="btn btn-primary" />
+                <%if (Session["idLista"]!=null) {  %>
+                <asp:Button Text="Eliminar" ID="btnEliminar" CssClass="btn btn-danger" OnClick="btnEliminar_Click" runat="server" />
+
+                <%} %>
+
                 <%--<a href="/"  class="btn btn-primary"  >Cancelar</a>--%>
                 <asp:Button Text="Cancelar" runat="server" CssClass="btn btn-primary" ID="btnCancelar" OnClick="btnCancelar_Click" />
             </div>

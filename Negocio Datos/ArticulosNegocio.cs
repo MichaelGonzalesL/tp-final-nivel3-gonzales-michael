@@ -87,7 +87,7 @@ namespace NegocioDatos
 
             try
             {
-                datos.setearConsulta("update ARTICULOS set Codigo=@codigo, Nombre=@nombre, Descripcion=@descripcion, IdMarca=@idMarca, IdCategoria=@idCategoria, ImagenUrl=@imagen, Precio=@precio where Id=@id\r\n");
+                datos.setearConsulta("update ARTICULOS set Codigo=@codigo, Nombre=@nombre, Descripcion=@descripcion, IdMarca=@idMarca, IdCategoria=@idCategoria, ImagenUrl=@imagen, Precio=@precio where Id=@id");
                 datos.setearParametros("@codigo", nuevo.CodArticulo);
                 datos.setearParametros("@nombre", nuevo.Nombre);
                 datos.setearParametros("@descripcion", nuevo.Descripcion);
@@ -130,16 +130,6 @@ namespace NegocioDatos
 
 
         }
-
-
-
-
-
-
-
-
-
-
 
     }
 
